@@ -1,0 +1,155 @@
+/*Global Style */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 5px;
+    padding: 5px;
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 2.5px;
+    padding: 2.5px;
+    color: white;
+}
+
+header p {
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+header a {
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    margin: 10px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul {
+    color: white;
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav ul li {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    display: inline;
+}
+
+main {
+    color: black;
+    margin: 20px;
+    padding: 20px;
+}
+
+main h1, main h2, main h3 {
+    text-align: center;
+    margin: 20px;
+    padding:20px;
+}
+
+main p {
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+}
+
+main ul {
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+main ul li {
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+footer {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+footer a {
+    color: lightgreen;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background-color: darkgreen;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: green;
+}
+
+form {
+    margin: 20px auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
