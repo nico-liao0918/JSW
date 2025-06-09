@@ -10,6 +10,11 @@ body.dark * {
     color: white;
 }
 
+header.dark {
+    background-color: black;
+    color: white;
+}
+
 header {
     margin: 5px;
     padding: 5px;
@@ -72,8 +77,49 @@ nav ul li {
 
 body.dark {
     background-color: black;
+    color: white;
 }
 
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #000;
+}
+
+.popup-box h3 {
+  margin: 0 0 10px;
+}
+
+.popup-box button {
+  margin: 10px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.popup-box button:last-child {
+  background-color: gray;
+}
+
+.popup_hidden {
+  display: none;
+}
 
 main {
     color: black;
@@ -156,13 +202,15 @@ form textarea {
 }
 
 form button {
+    display: inline-block;
     padding: 10px;
-    background-color: #28a745;
+    margin: 10px;
+    background-color: darkgreen;
     color: white;
-    border: none;
-    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 form button:hover {
-    background-color: #218838;
+    background-color: green;
 }
