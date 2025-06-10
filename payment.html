@@ -58,7 +58,7 @@
                     <h2>Payment Form</h2>
                 </div>
                 <div>
-                    <form action="https://formspree.io/f/xeokaqrn" method="post" enctype="multipart/form-data">
+                    <form id="paymentForm" action="https://formspree.io/f/xeokaqrn" method="post" enctype="multipart/form-data">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
                 
@@ -69,13 +69,17 @@
                     <input type="text" name="number" id="number" placeholder="Pick a number eg 1, 2, 3, etc" required>
                 
                     <label>Choose 1 Below:</label>
-                    <label for="USD">USD</label><input type="checkbox" id="USD" name="currency" value="USD">
-                    
-                    <label for="PHP">PHP</label><input type="checkbox" id="PHP" name="currency" value="PHP">
-                    
+                    <div class="">
+                        <label for="USD">
+                            <input type="radio" id="USD" name="currency" value="USD"> USD
+                        </label>
+                        <label for="PHP">
+                            <input type="radio" id="PHP" name="currency" value="PHP"> PHP
+                        </label>
+                    </div>
                     
                     <label for="upload">Upload Your Receipt:</label>
-                    <input type="file" name="upload" id="upload" required>
+                    <input type="file" name="upload" id="upload" accept=".jpg,.jpeg,.pdf" required>
                 
                     <button type="submit" class="button">Submit Form</button>
                     </form>
