@@ -34,9 +34,6 @@
                         <li>
                             <a href="shop.html">Shop</a>
                         </li>
-                        <li>
-                            <a href="">Contact</a>
-                        </li>
                     </ul>
                 </nav>
             </div>
@@ -57,27 +54,53 @@
                 </div>
             </section>
             <section>
-              <div>
-                <form action="https://formspree.io/f/xeokaqrn" method="post" enctype="multipart/form-data">
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" placeholder="Your Name" required>
-            
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" placeholder="Your Email" required>
-            
-                  <label>Choose 1 Below:</label>
-                  <input type="checkbox" id="USD" name="currency" value="USD"><label for="USD">USD</label>
-                  
-                  <input type="checkbox" id="PHP" name="currency" value="PHP"><label for="PHP">PHP</label>
-                  
-                  <label for="upload">Upload Your Receipt:</label>
-                  <input type="file" name="upload" id="upload" required>
-            
-                  <button type="submit" class="button">Submit Form</button>
-                </form>
-              </div>
+                <div>
+                    <h2>Payment Form</h2>
+                </div>
+                <div>
+                    <form action="https://formspree.io/f/xeokaqrn" method="post" enctype="multipart/form-data">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="number">Product Number? </label>
+                    <input type="text" name="number" id="number" placeholder="Pick a number eg 1, 2, 3, etc" required>
+                
+                    <label>Choose 1 Below:</label>
+                    <label for="USD">USD</label><input type="checkbox" id="USD" name="currency" value="USD">
+                    
+                    <label for="PHP">PHP</label><input type="checkbox" id="PHP" name="currency" value="PHP">
+                    
+                    
+                    <label for="upload">Upload Your Receipt:</label>
+                    <input type="file" name="upload" id="upload" required>
+                
+                    <button type="submit" class="button">Submit Form</button>
+                    </form>
+                </div>
             </section>
-            
+            <section>
+                <div>
+                    <h2>
+                        Not yet Paid?
+                    </h2>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        You can pay on the link below:
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/100USD" target="_blank">Pay in USD</a>
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/1000" target="_blank">Pay in PHP</a>
+                    </p>
+                </div>
+            </section>
         </main>
 
         <footer>
