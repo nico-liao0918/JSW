@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0"
+        />
+        <!--
+        <meta http-equiv="refresh" content="0; url=/error/error.html">
+        -->
+        <title>JS WEBSITE</title>
+        <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="genstyle/global.css">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <h1>
+                    <a 
+                        href="index.html">
+                            James Shops Website
+                    </a>
+                </h1>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <button id="dark-toggle" class="button">Toggle Dark Mode</button>
+            </section>
+            <section>
+                <div id="popup" class="popup_hidden">
+                  <div class="popup-box">
+                    <h3>Stay in the Loop!</h3>
+                    <p>Subscribe to receive updates, newsletters, newspapers, or announcements.</p>
+                    <button onclick="location.href='subscribe.html'">Yes, Sign Me Up</button>
+                    <button onclick="closePopup()">No, Thanks</button>
+                  </div>
+                </div>
+            </section>
+            <section>
+              <div>
+                <form action="https://formspree.io/f/xeokaqrn" method="post" enctype="multipart/form-data">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+                  <label>Choose 1 Below:</label>
+                  <input type="checkbox" id="USD" name="currency" value="USD"><label for="USD">USD</label>
+                  
+                  <input type="checkbox" id="PHP" name="currency" value="PHP"><label for="PHP">PHP</label>
+                  
+                  <label for="upload">Upload Your Receipt:</label>
+                  <input type="file" name="upload" id="upload" required>
+            
+                  <button type="submit" class="button">Submit Form</button>
+                </form>
+              </div>
+            </section>
+            
+        </main>
+
+        <footer>
+            <section>
+                <div>
+                    <p>
+                        Copyright &copy; 2025 
+                        James Shops Website.
+                        All Rights Reserved.
+                    </p>
+                </div>
+            </section>
+        </footer>
+        <script src="toggle.js"></script>
+        <script src="popup.js" defer></script>
+    </body>
+</html>
