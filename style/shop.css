@@ -1,0 +1,16 @@
+/* Shop CSS */
+
+.products  {
+    text-align: center;
+    display: inline-block;
+    background-color: antiquewhite;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.product {
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+}
