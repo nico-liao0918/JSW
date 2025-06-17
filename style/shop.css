@@ -1,5 +1,42 @@
 /* Shop CSS */
 
+.categories {
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+.cate { 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.buton {
+    padding: 10px;
+    margin: 10px;
+    background-color: darkgreen;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buton:hover {
+    background-color: green;
+}
+
 .products  {
     text-align: center;
     display: inline-block;
