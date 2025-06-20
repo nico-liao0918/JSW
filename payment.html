@@ -63,6 +63,8 @@
                 </div>
                 <div>
                     <form id="paymentForm" action="https://formspree.io/f/xeokaqrn" method="post">
+                        <input type="hidden" id="trackingID" name="trackingID">
+
                         <label for="name">Name: </label>
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
                     
@@ -90,6 +92,13 @@
                     
                         <button type="submit" class="button">Submit Form</button>
 
+                        <div id="popup" class="popup_hidden">
+                            <div class="popup-box">
+                                <h3>Your Tracking ID</h3>
+                                <p id="popupID"></p>
+                                <button onclick="submitForm()">OK</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </section>
@@ -148,6 +157,7 @@
         </footer>
         <script src="toggle.js"></script>
         <script src="menu.js"></script>
+        <script src="pay.js"></script>
         <script src="popup.js" defer></script>
     </body>
 </html>
