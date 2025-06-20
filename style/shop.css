@@ -24,19 +24,6 @@
     padding: 10px;
 }
 
-.buton {
-    padding: 10px;
-    margin: 10px;
-    background-color: darkgreen;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.buton:hover {
-    background-color: green;
-}
-
 .products  {
     text-align: center;
     display: inline-block;
