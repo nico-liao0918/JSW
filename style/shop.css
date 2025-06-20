@@ -8,12 +8,13 @@
 }
 
 .category {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     list-style-type: none;
     text-decoration: none;
     margin: 10px;
     padding: 10px;
+    gap: 10px;
 }
 
 .cate { 
@@ -35,6 +36,7 @@
 }
 
 .product {
+    display: inline-flexbox;
     text-align: left;
     margin: 20px;
     padding: 20px;
