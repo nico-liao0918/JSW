@@ -218,6 +218,20 @@ footer a:hover {
     background-color: green;
 }
 
+.buton {
+    display: inline-flex;
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buton:hover {
+    background-color: green;
+}
+
+
 
 /* ============================= */
 /*        FORM STYLING          */
