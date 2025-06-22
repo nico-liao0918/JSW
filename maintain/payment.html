@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0"
+        />
+        <!--
+        <meta http-equiv="refresh" content="0; url=/error/error.html">
+        -->
+        <title>JS WEBSITE</title>
+        <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="genstyle/global.css">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <h1>
+                    <a 
+                        href="index.html">
+                            James Shops Website
+                    </a>
+                </h1>
+            </div>
+            <div>
+                <nav>
+                    <button id="menu-toggle">☰ Menu</button>
+                    <ul id="menu-list" class="hidden">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="policy.html">Policy</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <button id="dark-toggle" class="button">Toggle Dark Mode</button>
+            </section>
+            <section>
+                <div id="popup" class="popup_hidden">
+                  <div class="popup-box">
+                    <h3>Stay in the Loop!</h3>
+                    <p>Subscribe to receive updates, newsletters, newspapers, or announcements.</p>
+                    <button onclick="location.href='subscribe.html'">Yes, Sign Me Up</button>
+                    <button onclick="closePopup()">No, Thanks</button>
+                  </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>Payment Form</h2>
+                </div>
+                <div>
+                    <form id="paymentForm" action="https://formspree.io/f/xeokaqrn" method="post">
+                        <input type="hidden" id="trackingID" name="trackingID">
+
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                        <label for="number">Product Number? </label>
+                        <input type="text" name="number" id="number" placeholder="Pick a number eg 1, 2, 3, etc" required>
+
+                        <label for="category">Category of Product? </label>
+                        <input type="text" name="category" id="category" placeholder="Books & Writings" required>
+                    
+                        <label>Choose 1 Below: </label>
+                        <div class="">
+                            <label for="USD">
+                                <input type="radio" id="USD" name="currency" value="USD"> USD
+                            </label>
+                            <label for="PHP">
+                                <input type="radio" id="PHP" name="currency" value="PHP"> PHP
+                            </label>
+                        </div>
+                        
+                        <label for="receiptLink">Paste Receipt Link: </label>
+                        <input type="url" id="receiptLink" name="receiptLink" placeholder="https://drive.google.com/..." required>
+                    
+                        <button type="submit" class="button">Submit Form</button>
+
+                        <div id="popup" class="popup_hidden">
+                            <div class="popup-box">
+                                <h3>Your Tracking ID</h3>
+                                <p id="popupID"></p>
+                                <button onclick="submitForm()">OK</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>
+                        Not yet Paid?
+                    </h2>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h3>For Products?</h3>
+                    <p>May it be books, writings, apps, etc</p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        You can pay on the link below:
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/100USD" target="_blank">Pay in USD</a>
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/1000" target="_blank">Pay in PHP</a>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h3>For Services?</h3>
+                    <p>For any services offerings</p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        <a href="mailto:jamesliao09@yahoo.com">Email Me</a>
+                            For the Payment Link
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section>
+                <div>
+                    <p>
+                        Copyright &copy; 2025 
+                        James Shops Website.
+                        All Rights Reserved.
+                    </p>
+                </div>
+            </section>
+        </footer>
+        <script src="toggle.js"></script>
+        <script src="menu.js"></script>
+        <script src="pay.js"></script>
+        <script src="popup.js" defer></script>
+    </body>
+</html>
