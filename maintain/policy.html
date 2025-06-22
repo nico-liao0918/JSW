@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0"
+        />
+        <!--
+        <meta http-equiv="refresh" content="0; url=./error/error.html">
+        -->
+        <title>JPLFP JS WEBSITE</title>
+        <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="genstyle/global.css">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <h1>
+                    <a 
+                        href="index.html">
+                            James Shops Website
+                    </a>
+                </h1>
+            </div>
+            <div>
+                <nav>
+                    <button id="menu-toggle">☰ Menu</button>
+                    <ul id="menu-list" class="hidden">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="policy.html">Policy</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <button id="dark-toggle" class="button">Toggle Dark Mode</button>
+            </section>
+            <section>
+                <div id="popup" class="popup_hidden">
+                  <div class="popup-box">
+                    <h3>Stay in the Loop!</h3>
+                    <p>Subscribe to receive updates, newsletters, newspapers, or announcements.</p>
+                    <button onclick="location.href='subscribe.html'">Yes, Sign Me Up</button>
+                    <button onclick="closePopup()">No, Thanks</button>
+                  </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>Service Policy</h2>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        <b>Fixed Price Policy</b>
+                    </p>
+                    <p>
+                        Each service is offered at a flat rate in either PHP or USD. Currency is based on client preference, but conversion is not based on exchange rates — rather on a 10:1 ratio
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        <b>No Return Policy</b>
+                    </p>
+                    <p>
+                        Once a final output is marked “Final” by the client, no further edits or revisions will be accepted. Further changes may be made under the Flexi package (hourly billing).
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        <b>Find Another; Stay Another Policy</b>
+                    </p>
+                    <p>
+                        If a client chooses to use another developer or hosting provider, all assets will be handed over, but I will no longer be responsible for updates, revisions, or maintenance.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        <b>First In, First Out (FIFO)</b>
+                    </p>
+                    <p>
+                        Project scheduling is handled on a FIFO basis. Rush services are available for projects that need to jump the queue — for an added fee.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        <b>Consultation Fee Policy</b>
+                    </p>
+                    <p>
+                        Consultation is free if initiated by the freelancer. However, if the client or potential client initiates the consultation independently, a consultation fee will apply.
+                        <br>Fee: 1,000 PHP | 100 USD
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        <b>Watermark Policy</b>
+                    </p>
+                    <p>
+                        All photo or video previews delivered before project finalization will include a visible watermark. Final outputs — once approved and marked as “Final” — will be delivered clean, without any watermarks.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        <b>Revision Policy</b>
+                    </p>
+                    <p>
+                        Each package includes a fixed number of revisions per month, based on the selected plan. Unused revisions do not carry over. Any extra revisions beyond the plan limit may be billed under the Flexi Plan.
+                    </p>
+                </div>
+                <div>
+                    
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        <b>Termination Policy</b>
+                    </p>
+                    <p>
+                        Either party may end the service agreement at any time with prior notice. If the client terminates the service after work has begun, any completed deliverables will be handed over upon payment for work rendered.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        <b>Non-Payment Policy</b>
+                    </p>
+                    <p>
+                        Failure to pay on or before the agreed date may result in delayed service, suspension, or project cancellation. For hosted sites, unpaid accounts may display a placeholder or temporary "payment overdue" page until payment is settled.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        <b>Communication Policy</b>
+                    </p>
+                    <p>
+                        All official communication should be done via email or written message for proper documentation. Response times may vary depending on workload, but all queries will be acknowledged within a reasonable timeframe.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        <b>Hosting Policy</b>
+                    </p>
+                    <p>
+                        Web hosting is billed monthly to ensure continuity of service and cost management. Failure to renew may result in temporary suspension or display of a placeholder page. Hosting does not include revisions, maintenance, or domain fees unless specified in a package.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h3>Any More Concerns not on the List above?</h3>
+                </div>
+                <div>
+                    <p>
+                        Contact us via our email:
+                    </p>
+                    <p>
+                        <a href="mailto:jamesliao09@yahoo.com" class="button">Email</a>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section>
+                <div>
+                    <p>
+                        Copyright &copy; 2025 
+                        James Price List, FAQs, Policy Website. 
+                        All Rights Reserved.
+                    </p>
+                    <p>
+                        Copyright &copy; 2025 
+                        James Shops Website.
+                        All Rights Reserved.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <a href="index.html">Go Back to Home Page</a>
+                    </p>
+                </div>
+            </section>
+        </footer>
+        <script src="toggle.js"></script>
+        <script src="menu.js"></script>
+        <script src="popup.js" defer></script>
+    </body>
+</html>
