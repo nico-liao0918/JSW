@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0"
+        />
+        <!--
+        <meta http-equiv="refresh" content="0; url=/error/error.html">
+        -->
+        <title>JS WEBSITE</title>
+        <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="genstyle/global.css">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <h1>
+                    <a 
+                        href="index.html">
+                            James Shops Website
+                    </a>
+                </h1>
+            </div>
+            <div>
+                <nav>
+                    <button id="menu-toggle">☰ Menu</button>
+                    <ul id="menu-list" class="hidden">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="policy.html">Policy</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <button id="dark-toggle" class="button">Toggle Dark Mode</button>
+            </section>
+            <section>
+                <div id="popup" class="popup_hidden">
+                  <div class="popup-box">
+                    <h3>Stay in the Loop!</h3>
+                    <p>Subscribe to receive updates, newsletters, newspapers, or announcements.</p>
+                    <button onclick="location.href='subscribe.html'">Yes, Sign Me Up</button>
+                    <button onclick="closePopup()">No, Thanks</button>
+                  </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>Welcome</h2>
+                    <p>
+                        This is the Homepage of James Shops Website.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>Explore the Site</h2>
+                    <p>
+                        You may use the navigation bar above for your convenience.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section>
+                <div>
+                    <p>
+                        Copyright &copy; 2025 
+                        James Shops Website.
+                        All Rights Reserved.
+                    </p>
+                    <p>
+                        <a 
+                            href="https://nico-liao0918.github.io/JRAPW/" 
+                            class="button">
+                                Go Back to JRAP Website
+                        </a>
+                    </p>
+                </div>
+            </section>
+        </footer>
+        <script src="toggle.js"></script>
+        <script src="menu.js"></script>
+        <script src="popup.js" defer></script>
+    </body>
+</html>
