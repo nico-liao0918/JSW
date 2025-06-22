@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0"
+        />
+        <!--
+        <meta http-equiv="refresh" content="0; url=/error/error.html">
+        -->
+        <title>JS WEBSITE</title>
+        <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="genstyle/global.css">
+        <link rel="stylesheet" href="style/shop.css">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <h1>
+                    <a 
+                        href="index.html">
+                            James Shops Website
+                    </a>
+                </h1>
+            </div>
+            <div>
+                <nav>
+                    <button id="menu-toggle">☰ Menu</button>
+                    <ul id="menu-list" class="hidden">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="policy.html">Policy</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="top">
+            <section>
+                <button id="dark-toggle" class="button">Toggle Dark Mode</button>
+            </section>
+            <section>
+                <div id="popup" class="popup_hidden">
+                  <div class="popup-box">
+                    <h3>Stay in the Loop!</h3>
+                    <p>Subscribe to receive updates, newsletters, newspapers, or announcements.</p>
+                    <button onclick="location.href='subscribe.html'">Yes, Sign Me Up</button>
+                    <button onclick="closePopup()">No, Thanks</button>
+                  </div>
+                </div>
+            </section>
+            <section class="cate">
+                <div class="categories">
+                    <h2>Categories: </h2>
+                    <ul class="category">
+                        <li>
+                            <a href="#writing" class="buton">
+                                Books & Writings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#software" class="buton">
+                                Softwares
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#service" class="buton">
+                                Services
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>Products</h2>
+                </div>
+            </section>
+            <section>
+                <div id="writing">
+                    <h3>Books, Scenarios, Writings</h3>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 1:</h3>
+                    <h4>Story of Zhare: Book 1; Raw Manuscript</h4>
+                    <p>
+                        <strong>Price:</strong> 100 USD | 1,000 PHP
+                    </p>
+                    <p>
+                        Current Status: Selling
+                    </p>
+                    <p>
+                        Links to Pay:
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/100USD" target="_blank">Pay in USD</a>
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/1000" target="_blank">Pay in PHP</a>
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 2:</h3>
+                    <h4>Story of Zhare: Book 2; Final Manuscript</h4>
+                    <p>
+                        <strong>Price:</strong> 100 USD | 1,000 PHP
+                    </p>
+                    <p>
+                        Current Status: Preselling
+                    </p>
+                    <p>
+                        Links to Pay:
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/100USD" target="_blank">Pay in USD</a>
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/1000" target="_blank">Pay in PHP</a>
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 3:</h3>
+                    <h4>Scenario 1 of James</h4>
+                    <p>
+                        <strong>Price:</strong> 100 USD | 1,000 PHP
+                    </p>
+                    <p>
+                        Current Status: Selling
+                    </p>
+                    <p>
+                        Links to Pay:
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/100USD" target="_blank">Pay in USD</a>
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/1000" target="_blank">Pay in PHP</a>
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 4:</h3>
+                    <h4>Scenario 2 of James</h4>
+                    <p>
+                        <strong>Price:</strong> 100 USD | 1,000 PHP
+                    </p>
+                    <p>
+                        Current Status: Selling
+                    </p>
+                    <p>
+                        Links to Pay:
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/100USD" target="_blank">Pay in USD</a>
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/1000" target="_blank">Pay in PHP</a>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="categories">
+                    <p>
+                        <a href="#top" class="button">
+                            Back to Top
+                        </a>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div id="software">
+                    <h3>Softwares</h3>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 1:</h3>
+                    <h4>Email Client Platform</h4>
+                    <p>
+                        <i><b>InboxPro</b></i>
+                    </p>
+                    <p>
+                        <strong>Price:</strong> 100 USD | 1,000 PHP
+                    </p>
+                    <p>
+                        Current Status: Preselling
+                    </p>
+                    <p>
+                        Links to Pay:
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/100USD" target="_blank">Pay in USD</a>
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/1000" target="_blank">Pay in PHP</a>
+                    </p>
+                    <p>
+                        For License:
+                    </p>
+                    <p>
+                        Contact Me via
+                            <a 
+                                href="mailto:jamesliao09@yahoo.com">
+                                    Email
+                            </a>
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 2:</h3>
+                    <h4>Digital Planner Platform</h4>
+                    <p>
+                        <i><b></b></i>
+                    </p>
+                    <p>
+                        <strong>Price:</strong> 100 USD | 1,000 PHP
+                    </p>
+                    <p>
+                        Current Status: Preselling
+                    </p>
+                    <p>
+                        Links to Pay:
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/100USD" target="_blank">Pay in USD</a>
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/1000" target="_blank">Pay in PHP</a>
+                    </p>
+                    <p>
+                        For License:
+                    </p>
+                    <p>
+                        Contact Me via
+                            <a 
+                                href="mailto:jamesliao09@yahoo.com">
+                                    Email
+                            </a>
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 3:</h3>
+                    <h4>Journal Program Platform</h4>
+                    <p>
+                        <i><b>Daily Scribe</b></i>
+                    </p>
+                    <p>
+                        <strong>Price:</strong> 100 USD | 1,000 PHP
+                    </p>
+                    <p>
+                        Current Status: Preselling
+                    </p>
+                    <p>
+                        Links to Pay:
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/100USD" target="_blank">Pay in USD</a>
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/1000" target="_blank">Pay in PHP</a>
+                    </p>
+                    <p>
+                        For License:
+                    </p>
+                    <p>
+                        Contact Me via
+                            <a 
+                                href="mailto:jamesliao09@yahoo.com">
+                                    Email
+                            </a>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="categories">
+                    <p>
+                        <a href="#top" class="button">
+                            Back to Top
+                        </a>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div id="service">
+                    <h3>Services</h3>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 1:</h3>
+                    <h4>Website Development</h4>
+                    <p>
+                        <strong>Price:</strong> varies.
+                    </p>
+                    <p>
+                        See
+                            <a href="webdev.html" class="button">This Page</a>
+                                for more Info
+                    </p>
+                    <p>
+                        Ready to Hire?
+                            <a 
+                                href="mailto:jamesliao09@yahoo.com">
+                                    Email Me
+                            </a>
+                         For the Payment Link
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 2:</h3>
+                    <h4>Website Hosting</h4>
+                    <p>
+                        <strong>Price:</strong> varies.
+                    </p>
+                    <p>
+                        See
+                            <a href="webhos.html" class="button">This Page</a>
+                                for more Info
+                    </p>
+                    <p>
+                        Ready to Hire?
+                            <a 
+                                href="mailto:jamesliao09@yahoo.com">
+                                    Email Me
+                            </a>
+                         For the Payment Link
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 3:</h3>
+                    <h4>Content Creation</h4>
+                    <p>
+                        <strong>Price:</strong> varies.
+                    </p>
+                    <p>
+                        See
+                            <a href="concre.html" class="button">This Page</a>
+                                for more Info
+                    </p>
+                    <p>
+                        Ready to Hire?
+                            <a 
+                                href="mailto:jamesliao09@yahoo.com">
+                                    Email Me
+                            </a>
+                         For the Payment Link
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 4:</h3>
+                    <h4>Content Writing</h4>
+                    <p>
+                        <strong>Price:</strong> varies.
+                    </p>
+                    <p>
+                        See
+                            <a href="conwri.html" class="button">This Page</a>
+                                for more Info
+                    </p>
+                    <p>
+                        Ready to Hire?
+                            <a 
+                                href="mailto:jamesliao09@yahoo.com">
+                                    Email Me
+                            </a>
+                         For the Payment Link
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 5:</h3>
+                    <h4>Virtual Assistant</h4>
+                    <p>
+                        <strong>Price:</strong> varies.
+                    </p>
+                    <p>
+                        See
+                            <a href="virass.html" class="button">This Page</a>
+                                for more Info
+                    </p>
+                    <p>
+                        Ready to Hire?
+                            <a 
+                                href="mailto:jamesliao09@yahoo.com">
+                                    Email Me
+                            </a>
+                         For the Payment Link
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 6:</h3>
+                    <h4>Personal Assistant</h4>
+                    <p>
+                        <strong>Price:</strong> varies.
+                    </p>
+                    <p>
+                        See
+                            <a href="virass.html" class="button">This Page</a>
+                                for more Info
+                    </p>
+                    <p>
+                        Ready to Hire?
+                            <a 
+                                href="mailto:jamesliao09@yahoo.com">
+                                    Email Me
+                            </a>
+                         For the Payment Link
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 7:</h3>
+                    <h4>Data Entry</h4>
+                    <p>
+                        <strong>Price:</strong> varies.
+                    </p>
+                    <p>
+                        See
+                            <a href="datent.html" class="button">This Page</a>
+                                for more Info
+                    </p>
+                    <p>
+                        Ready to Hire?
+                            <a 
+                                href="mailto:jamesliao09@yahoo.com">
+                                    Email Me
+                            </a>
+                         For the Payment Link
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 8:</h3>
+                    <h4>Editing and Proofreading</h4>
+                    <p>
+                        <strong>Price:</strong> varies.
+                    </p>
+                    <p>
+                        See
+                            <a href="edipro.html" class="button">This Page</a>
+                                for more Info
+                    </p>
+                    <p>
+                        Ready to Hire?
+                            <a 
+                                href="mailto:jamesliao09@yahoo.com">
+                                    Email Me
+                            </a>
+                         For the Payment Link
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 9:</h3>
+                    <h4>Photo and Video Editing</h4>
+                    <p>
+                        <strong>Price:</strong> varies.
+                    </p>
+                    <p>
+                        See
+                            <a href="pvedit.html" class="button">This Page</a>
+                                for more Info
+                    </p>
+                    <p>
+                        Ready to Hire?
+                            <a 
+                                href="mailto:jamesliao09@yahoo.com">
+                                    Email Me
+                            </a>
+                         For the Payment Link
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product 10:</h3>
+                    <h4>QA (Quality Assurance)</h4>
+                    <p>
+                        <strong>Price:</strong> varies.
+                    </p>
+                    <p>
+                        See
+                            <a href="" class="button">This Page</a>
+                                for more Info
+                    </p>
+                    <p>
+                        Ready to Hire?
+                            <a 
+                                href="mailto:jamesliao09@yahoo.com">
+                                    Email Me
+                            </a>
+                         For the Payment Link
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="categories">
+                    <p>
+                        <a href="#top" class="button">
+                            Back to Top
+                        </a>
+                    </p>
+                </div>
+            </section>
+
+            <!--
+            <section class="products">
+                <div class="product">
+                    <h3>Product Number</h3>
+                    <h4>Product Name</h4>
+                    <p>
+                        <strong>Price:</strong> 10 USD | 100 PHP
+                    </p>
+                    <p>
+                        Current Status: Preselling
+                    </p>
+                    <p>
+                        Links to Pay:
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/10USD" target="_blank">Pay in USD</a>
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/100" target="_blank">Pay in PHP</a>
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product Number</h3>
+                    <h4>Services Offering</h4>
+                    <p>
+                        <strong>Price:</strong> varies.
+                    </p>
+                    <p>
+                        See
+                            <a href="" class="button">This Page</a>
+                                for more Info
+                    </p>
+                    <p>
+                        Ready to Hire?
+                            <a href="mailto:jamesliao09@yahoo.com">Email Me</a>
+                                For the Payment Link
+                    </p>
+                </div>
+            </section>
+            <section class="products">
+                <div class="product">
+                    <h3>Product Number</h3>
+                    <h4>App</h4>
+                    <p>
+                        <i><b>Name of App</b></i>
+                    </p>
+                    <p>
+                        <strong>Price:</strong> 100 USD | 1,000 PHP
+                    </p>
+                    <p>
+                        Current Status: Preselling
+                    </p>
+                    <p>
+                        Links to Pay:
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/100USD" target="_blank">Pay in USD</a>
+                    </p>
+                    <p>
+                        <a href="https://paypal.me/liaoPH09/1000" target="_blank">Pay in PHP</a>
+                    </p>
+                    <p>
+                        For License:
+                    </p>
+                    <p>
+                        Contact Me via
+                            <a 
+                                href="mailto:jamesliao09@yahoo.com">
+                                    Email
+                            </a>
+                    </p>
+                </div>
+            </section>
+            -->
+
+            <section>
+                <div>
+                    <p>
+                        Done Paying? You may send the receipt on the link below.:
+                    </p>
+                    <p>
+                        <a href="payment.html">Click Here</a>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section>
+                <div>
+                    <p>
+                        Copyright &copy; 2025 
+                        James Shops Website.
+                        All Rights Reserved.
+                    </p>
+                </div>
+            </section>
+        </footer>
+        <script src="toggle.js"></script>
+        <script src="menu.js"></script>
+        <script src="popup.js" defer></script>
+    </body>
+</html>
