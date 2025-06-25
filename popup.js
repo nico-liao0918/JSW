@@ -1,7 +1,6 @@
-// popup.js
+// Popup JS
 
 window.onload = () => {
-
   setTimeout(() => {
     const dismissed = localStorage.getItem("popupDismissed");
     if (!dismissed) {
@@ -15,23 +14,20 @@ function closePopup() {
   localStorage.setItem("popupDismissed", "true");
 }
 
-const form = document.getElementById("paymentForm");
+document.getElementById("paymentForm").addEventListener("submit", function(event) {
+  event.preventDefault();
 
-form.addEventListener("submit", function (e) {
-    e.preventDefault(); // stop automatic submission
+  const category = document.getElementById("category").value.trim().replace(/\s+/g, '-');
+  const number = document.getElementById("number").value.trim();
+  const random = Math.floor(1000 + Math.random() * 9000);
+  const trackingID = `JamesShopsWebsite-${category}-${number}-${random}`;
 
-    const category = document.getElementById("category").value.trim().replace(/\s+/g, '-');
-    const number = document.getElementById("productNumber").value.trim();
-    const random = Math.floor(1000 + Math.random() * 9000);
-    const trackingID = `YourShop-${category}-${number}-${random}`;
+  document.getElementById("trackingID").value = trackingID;
 
-    document.getElementById("trackingID").value = trackingID;
-    document.getElementById("popupID").textContent = trackingID;
+  document.getElementById("popupID").textContent = trackingID;
+  document.getElementById("popup").classList.remove("popup_hidden");
 
-    document.getElementById("popup").classList.remove("popup_hidden");
+  document.querySelector("#popup button").onclick = () => {
+    this.submit(); 
+  };
 });
-
-function submitForm() {
-    document.getElementById("popup").classList.add("popup_hidden");
-    form.submit(); // submit manually after confirmation
-}
