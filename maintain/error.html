@@ -7,42 +7,33 @@
             name="viewport" 
             content="width=device-width, initial-scale=1.0"
         />
-        <!--
-        <meta http-equiv="refresh" content="0; url=error.html">
-        -->
         <meta name="robots" content="noindex, nofollow">
-        <title>JS WEBSITE</title>
+        <title>ERROR</title>
         <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="genstyle/global.css">
+        <link rel="stylesheet" href="genstyles/global.css">
     </head>
 
     <body>
         <header>
-            <h1>Subscribe</h1>
+            <h1>Unauthorized</h1>
         </header>
 
         <main>
             <section>
-                <div>
-                    <h2>Signup Form:</h2>
-                </div>
-            </section>
-            <section>
                 <button id="dark-toggle" class="button">Toggle Dark Mode</button>
             </section>
             <section>
-                <div>
-                    <form action="https://formspree.io/f/xwpblzlk" method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" required placeholder="Your Name">
-
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" required placeholder="your@email.com">
-
-                        <button type="submit" class="button">Subscribe</button>
-                    </form>
+                <div id="popup" class="popup_hidden">
+                  <div class="popup-box">
+                    <h3>Stay in the Loop!</h3>
+                    <p>Subscribe to receive updates, newsletters, newspapers, or announcements.</p>
+                    <button onclick="location.href='subscribe.html'">Yes, Sign Me Up</button>
+                    <button onclick="closePopup()">No, Thanks</button>
+                  </div>
                 </div>
             </section>
+            <p>The site is currently down.</p>
+            <p>Please check back later.</p>
         </main>
 
         <footer>
@@ -50,7 +41,7 @@
                 <div>
                     <p>
                         Copyright &copy; 2025 
-                        James Shops Website.
+                        ERROR. 
                         All Rights Reserved.
                     </p>
                 </div>
@@ -66,4 +57,3 @@
         <script src="popup.js" defer></script>
     </body>
 </html>
-        
