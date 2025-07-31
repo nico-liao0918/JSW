@@ -2,7 +2,7 @@
 
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8"/>
         <meta 
             name="viewport" 
             content="width=device-width, initial-scale=1.0"
@@ -44,6 +44,11 @@
                                 Policy
                             </a>
                         </li>
+                        <li>
+                            <a href="dashboard.html">
+                                Dashboard
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -65,18 +70,30 @@
             </section>
             <section>
                 <div>
-                    <h2>Welcome</h2>
+                    <h2>Welcome to Premium Content</h2>
+                    <p id="welcome"></p>
+                    <p id="countdown"></p>
+                </div>
+            </section>
+            <!--
+            <section>
+                <div>
                     <p>
-                        This is the Homepage of James Shops Website.
+                        Insert Words here per new paragrapg
+                    </p>
+                </div>
+            </section>
+            -->
+            <section>
+                <div>
+                    <p>
+                        <a href="dashboard.html" class="button">Go back to Dashboard</a>
                     </p>
                 </div>
             </section>
             <section>
                 <div>
-                    <h2>Explore the Site</h2>
-                    <p>
-                        You may use the navigation bar above for your convenience.
-                    </p>
+                    <button onclick="logout()" class="button">Logout</button>
                 </div>
             </section>
         </main>
@@ -86,21 +103,17 @@
                 <div>
                     <p>
                         Copyright &copy; 2025 
-                        James Shops Website.
+                        James Books Website. 
                         All Rights Reserved.
-                    </p>
-                    <p>
-                        <a 
-                            href="https://nico-liao0918.github.io/JRAPW/" 
-                            class="button">
-                                Go Back to JRAP Website
-                        </a>
                     </p>
                 </div>
             </section>
+            <section>
         </footer>
         <script src="toggle.js"></script>
         <script src="menu.js"></script>
+        <script src="login.js"></script>
+        <script src="content.js"></script>
         <script src="popup.js" defer></script>
     </body>
 </html>

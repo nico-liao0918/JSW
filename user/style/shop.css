@@ -1,0 +1,43 @@
+/* Shop CSS */
+
+.categories {
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.category {
+    display: inline-flex;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.cate { 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.products  {
+    text-align: center;
+    display: inline-block;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.product {
+    display: inline-flexbox;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+}

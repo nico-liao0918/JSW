@@ -2,7 +2,7 @@
 
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8"/>
         <meta 
             name="viewport" 
             content="width=device-width, initial-scale=1.0"
@@ -44,6 +44,11 @@
                                 Policy
                             </a>
                         </li>
+                        <li>
+                            <a href="dashboard.html">
+                                Dashboard
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -65,18 +70,20 @@
             </section>
             <section>
                 <div>
-                    <h2>Welcome</h2>
-                    <p>
-                        This is the Homepage of James Shops Website.
-                    </p>
+                    <form id="loginForm">
+                        <label for="username"></label>
+                        <input type="text" id="username" placeholder="Username" required>
+                    
+                        <label for="password"></label>
+                        <input type="password" id="password" placeholder="Password" required>
+                    
+                        <button type="submit">Login</button>
+                    </form>
                 </div>
             </section>
             <section>
                 <div>
-                    <h2>Explore the Site</h2>
-                    <p>
-                        You may use the navigation bar above for your convenience.
-                    </p>
+                    <p id="message"></p>
                 </div>
             </section>
         </main>
@@ -86,21 +93,15 @@
                 <div>
                     <p>
                         Copyright &copy; 2025 
-                        James Shops Website.
+                        James Books Website. 
                         All Rights Reserved.
-                    </p>
-                    <p>
-                        <a 
-                            href="https://nico-liao0918.github.io/JRAPW/" 
-                            class="button">
-                                Go Back to JRAP Website
-                        </a>
                     </p>
                 </div>
             </section>
         </footer>
         <script src="toggle.js"></script>
         <script src="menu.js"></script>
+        <script src="login.js"></script>
         <script src="popup.js" defer></script>
     </body>
 </html>
